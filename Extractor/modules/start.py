@@ -18,7 +18,7 @@ from Extractor.modules.rg_vikramjeet import rgvikram_txt
 
 # ------------------------------------------------------------------------------- #
 
-
+o
 
 
 buttons = InlineKeyboardMarkup([
@@ -227,7 +227,7 @@ back_button  = [[
 
 
 
-@app.on_message(filters.command("apps") & filters.user(SUDO_USERS))
+@app.on_message(filters.command("start") & filters.user(SUDO_USERS))
 async def start(_,message):
   join = await subscribe(_,message)
   if join ==1:
